@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div id="login-card"  >
+    <h1>Welcome back!</h1>
+    <p>Enter your email to receive your OTP</p>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="example@email.com" />
+    <p id="emailhelper" > We’ll send a one-time password to this email</p>
+
+    <button id="getotpbtn">Get OTP</button>
+  </div>
+  <div id="otp-card"  class="hidden" >
+    <h1> Enter the OTP sent to your email</h1>
+    <div id="otpbox">
+    <input class="otpinput" maxlength="1">
+    <input class="otpinput" maxlength="1">
+    <input class="otpinput" maxlength="1">
+    <input class="otpinput" maxlength="1">
+    </div>
+  
+    <button>Login</button>
+    <p>Didn't receive OTP ?<span id="resendotp" class="Resend "> Resend OTP  (<span id="timer">30</span>s)</span></p>
+
+  </div>
+  <script src="login.js"></script>
+
+</body>
+</html>
