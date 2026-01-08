@@ -36,8 +36,9 @@ const resendotp = document.getElementById("resendotp");
 const timer = document.getElementById("timer");
 let seconds =30;
 let intervalid;
-startTimer();
+
 function startTimer(){
+     
     resendotp.classList.add("disabled");
     seconds=30;
     timer.textContent=seconds;
@@ -80,7 +81,7 @@ else{
 }
 
 });
-
+//  Validate the entered email
 getotpbtn.addEventListener("click",()=>{
     if(emailregex.test(email.value)){
         email.innerHTML="We’ll send a one-time password to this email"
@@ -88,6 +89,8 @@ getotpbtn.addEventListener("click",()=>{
         getotpbtn.disabled=false;
         logindiv.classList.add("hidden");
         otpdiv.classList.remove("hidden");
+        startTimer(); //  // Start the OTP countdown timer only when OTP card is displayed
+
         
     }
     else{
