@@ -70,7 +70,7 @@ let emailregex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 let logindiv=document.getElementById("login-card");
 let otpdiv =document.getElementById("otp-card")
 getotpbtn.disabled=true;//disable button when a valid email is entered
-email.addEventListener("blur",()=>{
+email.addEventListener("input",()=>{
 if(emailregex.test(email.value)){
     emailhelper.innerHTML="We’ll send a one-time password to this email";
     emailhelper.style.color="#777"
@@ -88,7 +88,7 @@ else{
 //  Validate the entered email
 getotpbtn.addEventListener("click",()=>{
     if(emailregex.test(email.value)){
-        email.innerHTML="We’ll send a one-time password to this email"
+        emailhelper.innerHTML="We’ll send a one-time password to this email"
         emailhelper.style.color="#777";
         getotpbtn.disabled=false;
         logindiv.classList.add("hidden");

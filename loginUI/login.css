@@ -6,11 +6,12 @@
 }
 
 body {
-height: 100vh;
+min-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 background-color: lightgray;
+padding: 15px;
 }
 #login-card{
     background-color: white;
@@ -129,11 +130,27 @@ font-size: 15px;
   margin-left: 35px;
  
  }
- #getotpbtn :disabled{
+ #getotpbtn:disabled{
   opacity: 0.5;
   cursor: not-allowed;
  }
 
+
+
+ /* 
+   RESPONSIVE DESIGN
+    */
+
+    @media (max-width:760px){
+      .login-card{
+        width: 100%;
+        max-width: 360px;
+        padding: 20px;
+      }
+      body{
+        padding: 15px;
+      }
+    }
 
 
 
