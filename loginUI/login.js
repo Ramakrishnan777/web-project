@@ -91,8 +91,8 @@ getotpbtn.addEventListener("click",()=>{
         emailhelper.innerHTML="We’ll send a one-time password to this email"
         emailhelper.style.color="#777";
         getotpbtn.disabled=false;
-        logindiv.classList.add("hidden");
-        otpdiv.classList.remove("hidden");
+        logindiv.classList.add("hidden"); 
+    otpdiv.classList.remove("hidden");      
         startTimer(); // start OTP countdown timer after clicking get otp
 
         
