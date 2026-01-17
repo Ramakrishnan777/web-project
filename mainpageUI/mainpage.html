@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+  rel="stylesheet">
+
+</head>
+<body>
+<section class="hero">
+  
+            <div class="topbar">
+               <div class="vibely-logo">
+                   <div class="vibely-icon">🎶</div>
+                     <div class="vibely-text">Vibely</div>
+              </div>
+               <button class="myeventsbtn">My Events</button>
+            <button class="LogOut">Log Out</button> 
+      
+         </div>
+  <div class="herocontent">
+
+        <h1>Connecting the world</h1>
+        <p >
+            Discover events. Meet people. Create memories
+        </p>
+        <div class="search-box">
+        <input type="text" placeholder=" 🔎︎ Search events">
+        <select class="dropdown" >
+              <option  value="" disabled selected hidden> 📋 All Categories</option>
+            <option value="concert">Concert</option>
+             <option value="food&drinks">Food & Drinks</option>
+              <option value="conference">Conference</option>
+               <option value="sports">Sports</option>
+                <option value="festival">Festival</option>
+        </select>
+
+       <select class="dropdown">
+        <option value="" disabled selected hidden>📌 Location</option>
+          <option value="chennai">Chennai</option>
+           <option value="bangalore">Bangalore</option>
+            <option value="goa">Goa</option>
+             <option value="mumbai">Mumbai</option>
+              <option value="delhi">Delhi</option>
+       </select>
+
+        
+        <button class="searchbtn">Search</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Browse Category Section -->
+ <div class="categoryheading"> 
+  <h1>Browse Events by Category</h1>
+
+ </div>
+   <div class="eventcategory">
+    <div class="eventTypes">
+      <span class="eventcategoryicons">🎼</span>
+      <h3>Concerts</h3>
+    </div>
+   <div class="eventTypes">
+      <span class="eventcategoryicons">🍔🍹</span>
+      <h3 >Food & Drink</h3>
+    </div>
+    <div class="eventTypes">
+      <span  class="eventcategoryicons">🎤</span>
+      <h3 >Conference</h3>
+    </div>
+    <div class="eventTypes">
+      <span class="eventcategoryicons">⚽</span>
+      <h3>Sports</h3>
+    </div>
+    <div class="eventTypes">
+      <span class="eventcategoryicons">🎉</span>
+      <h3>Festivals</h3>
+    </div>
+  </div>
+
+
+<!-- Event List Section -->
+<section class="eventlist">
+  <h1 class="eventlist-title">Upcoming Events</h1>
+    <p class="eventlist-subtitle">Hand-picked events you shouldn't miss</p>
+    <div class="events"></div>
+
+    <button class="alleventsbtn">View All Events</button>
+  
+</section>
+
+<!--  How it Works -->
+<section class="footersection">
+  <h1>How it Works</h1>
+ <footer>
+  <div>
+    <h2>Find Events</h2>
+    <img src="../assets/images/searchicon (2).svg" class="footericons">
+    <p>Browse events by category or location</p>
+  </div>
+
+  <div>
+    <h2>Book Tickets</h2>
+     <img src="../assets/images/ticketicon.svg" class="footericons">
+    <p>Reserve your ticket instantly</p>
+  </div>
+
+  <div>
+    <h2>Attend & Enjoy</h2>
+     <img src="../assets/images/partyicon (1).svg" class="footericons">
+    <p>Join the event and have fun</p>
+  </div>
+ </footer>
+</section>
+<script src="mainpage.js"></script>
+</body>
+</html>
