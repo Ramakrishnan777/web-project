@@ -14,7 +14,7 @@ body {
 /* HERO SECTION */
 .hero {
     position: relative;
-    background-image: url('../assets/images/concert.png');
+    background-image: url('../images/concertBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,8 +71,8 @@ body {
     width: 100%;
     padding: 20px 32px;
     position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: 0;
+    margin-left: 0;
     z-index: 3;
 }
 
@@ -211,14 +211,14 @@ body {
 /* CATEGORY HEADING SECTION */
 .categoryheading h1 {
     position: relative;
-    top: 40px;
-    left: 440px;
+    margin-top: 40px;
+    margin-left: 440px;
 }
 
 .categoryheading p {
     position: relative;
-    top: 60px;
-    left: 500px;
+    margin-top: 60px;
+    margin-left: 500px;
 }
 
 /* EVENT CATEGORY DIV*/
@@ -322,7 +322,7 @@ h3 {
     font: 13px;
     font-weight: 600;
     color: #ff5a5f;
-    ;
+    
 }
 
 .event-name {
@@ -363,9 +363,8 @@ h3 {
 }
 
 .alleventsbtn {
-    position: relative;
-    top: 30px;
-    left: 600px;
+    margin-top: 30px;
+    margin-left: 600px;
     padding: 12px 28px;
     background-color: #1a73e8;
     color: #fff;
@@ -387,38 +386,35 @@ h3 {
 
 /* footer styling */
 .footersection {
-    position: relative;
     width: 100%;
     height: 300px;
     padding: 20px;
     background-color: #fff;
-    top: 80px;
+    margin-top: 80px;
     padding-top: 60px;
 }
 
 .footersection h1 {
-    position: relative;
-    left: 200px;
+    margin-left: 200px;
 }
 
 footer {
-    position: relative;
     display: flex;
     justify-content: center;
     gap: 150px;
     text-align: center;
-    top: 20px;
+    margin-top: 20px;
 }
 
 .footericons {
-    position: relative;
+
     width: 50px;
     height: 50px;
     border-radius: 4px;
-    top: 10px;
+   margin-top: 10px;
 }
 
 footer p {
-    position: relative;
-    top: 23px;
+  
+    margin-top: 23px;
 }

@@ -1,5 +1,5 @@
 // Load events from JSON file
-fetch("main.json")
+fetch("mainpage.json")
   .then(response => response.json())
   .then(events => displayEvents(events))
   .catch(e => console.log("Error loading events:", e));

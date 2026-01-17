@@ -7,7 +7,7 @@
     "time": "10:00 AM",
     "location": "Chennai",
     "price": "₹499",
-    "image":  "../assets/images/foodevent.jpg"
+    "image":  "../images/foodevent.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "time": "9:00 AM",
     "location": "Bangalore",
     "price": "₹999",
-    "image": "../assets/images/conference.jpg"
+    "image": "../images/conferenceEvent.jpg"
   },
   {
     "id": 3,
@@ -27,6 +27,6 @@
     "time": "6:00 PM",
     "location": "Goa",
     "price": "₹1,499",
-    "image": "../assets/images/concertevent.jpg"
+    "image": "../images/concertevent.jpg"
   }
 ]
