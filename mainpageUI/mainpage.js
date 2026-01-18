@@ -1,9 +1,11 @@
 // Load events from JSON file
-fetch("mainpage.json")
-  .then(response => response.json())
-  .then(events => displayEvents(events))
-  .catch(e => console.log("Error loading events:", e));
 
+  let loadEvents=async ()=>{
+    const response =await fetch("mainpage.json")
+    const events=await response.json();
+    displayEvents(events)
+  }
+  loadEvents();
 // Display event cards on the page
 function displayEvents(events) {
   const container = document.querySelector(".events");
