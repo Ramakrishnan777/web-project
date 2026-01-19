@@ -422,6 +422,8 @@ footer p {
 
 /* Responsive Design*/
 
+
+/*Background image .hero*/
 @media (max-width:768px){
     .hero{
        min-height: 80vh;
@@ -429,7 +431,7 @@ footer p {
     }
 }
 
- /*search bar*/
+ /*h1 inside herocontent container */
 @media (max-width:768px){
     .herocontent h1{
         font-size: 28px;
@@ -439,6 +441,7 @@ footer p {
         font-size: 14px;
     }
 }
+/* searchbox and its elements*/
 @media (max-width:900px){
     .search-box{
         flex-wrap: wrap;
@@ -453,6 +456,7 @@ footer p {
         padding: 4px;
     }
 }
+/* topbar and its elements*/
 @media (max-width:768px){
     .topbar{
         padding: 16px;
@@ -470,12 +474,14 @@ footer p {
 
 
 }
+/* h1 inside categoryheading container */
 @media (max-width:768px){
     .categoryheading h1{
 font-size: 26px;
     
     }
 }
+/*eventcategory and eventTypes*/
 @media (max-width:900px){
  .eventcategory{
     flex-wrap: wrap;
@@ -486,13 +492,14 @@ font-size: 26px;
     height: 140px;
  }
 }
-
+/* Event Title and subtitle*/
 @media (max-width:1024px){
     .eventlist-subtitle,.eventlist-title{
        margin: 0;
         text-align: center;
     }
 }
+/*Events  container and eventcard*/
 @media (max-width:768px){
     .events{
         gap: 20px;
@@ -503,7 +510,7 @@ font-size: 26px;
     }
 
 }
-
+/* allEvents Button*/
 @media (max-width: 1024px) {
   .alleventsbtn {
     margin-left: auto;
@@ -511,6 +518,8 @@ font-size: 26px;
     display: block;
   }
 }
+
+/*footer */
 @media (max-width:900px){
     footer{
         flex-wrap: wrap;
