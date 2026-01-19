@@ -210,9 +210,9 @@ body {
 
 /* CATEGORY HEADING SECTION */
 .categoryheading h1 {
-    position: relative;
-    margin-top: 40px;
-    margin-left: 440px;
+      position: relative;
+    top: 60px;
+   text-align: center;
 }
 
 .categoryheading p {
@@ -417,4 +417,111 @@ footer {
 footer p {
   
     margin-top: 23px;
+}
+
+
+/* Responsive Design*/
+
+@media (max-width:768px){
+    .hero{
+       min-height: 80vh;
+    background-position: center 30%;
+    }
+}
+
+ /*search bar*/
+@media (max-width:768px){
+    .herocontent h1{
+        font-size: 28px;
+        padding-top: 70px;
+    }
+    .herocontent p{
+        font-size: 14px;
+    }
+}
+@media (max-width:900px){
+    .search-box{
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+    .herocontent input,.dropdown,.searchbtn{
+        width: 100%;
+        max-width: 380px;
+    }
+    .dropdown{
+        padding: 4px;
+    }
+}
+@media (max-width:768px){
+    .topbar{
+        padding: 16px;
+    }
+    .LogOut,.myeventsbtn{
+        width: auto;
+        height: 38px;
+        font-size: 11px;
+        padding: 6px 10px;
+
+    }
+    .vibely-text{
+        font-size: 22px;
+    }
+
+
+}
+@media (max-width:768px){
+    .categoryheading h1{
+font-size: 26px;
+    
+    }
+}
+@media (max-width:900px){
+ .eventcategory{
+    flex-wrap: wrap;
+    padding: 40px 20px;
+ }
+ .eventTypes{
+    width: 140px;
+    height: 140px;
+ }
+}
+
+@media (max-width:1024px){
+    .eventlist-subtitle,.eventlist-title{
+       margin: 0;
+        text-align: center;
+    }
+}
+@media (max-width:768px){
+    .events{
+        gap: 20px;
+    }
+    .eventcard{
+        width: 90%;
+        max-width: 320px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+  .alleventsbtn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (max-width:900px){
+    footer{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    footer h1{
+        margin: 0;
+        text-align: center;
+    }
+    .footersection{
+        width: auto;
+        height: auto;
+    }
 }
