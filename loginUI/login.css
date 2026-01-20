@@ -20,7 +20,6 @@
     padding: 15px;
 }
 
-
 /* LOGIN CARD */
 
 #login-card {
@@ -89,7 +88,7 @@ button:hover {
 }
 
 /* Hidden class for toggling elements */
-.hidden {
+.is-hidden {
     display: none;
 }
 

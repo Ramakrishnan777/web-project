@@ -7,19 +7,24 @@
 </head>
 <body>
  <!--Login Page-->      
+ <div id="outer" class="outerlayer">
+  
   <div id="login-card" >
+     <form method="" action="" id="loginform">
     <h1>Welcome back!</h1>
     <p>Enter your email to receive your OTP</p>
 
     <label for="email">Email</label>
-    <input type="email" id="email" placeholder="example@email.com" />
+    <input type="email" id="email" placeholder="example@email.com" name="email"/>
     <p id="emailhelper" > We’ll send a one-time password to this email</p>
 
     <button id="getotpbtn">Get OTP</button>
+      </form>
   </div>
 
   <!--OTP card-->
-  <div id="otp-card" class="hidden"  >
+  <div id="otp-card" class="is-hidden"  >
+    <form  action="" method="" id="otpform">
     <h1> Enter the OTP sent to your email</h1>
     <div id="otpbox">
     <input class="otpinput" maxlength="1">
@@ -27,11 +32,13 @@
     <input class="otpinput" maxlength="1">
     <input class="otpinput" maxlength="1">
     </div>
-  
-    <button>Login</button>
+    <!--Hidden input to send full otp-->
+    <input type="hidden" name="otp" id="otphidden">
+    <button id="loginbtn">Login</button>
     <p>Didn't receive OTP ?<span id="resendotp" class="Resend "> Resend OTP  (<span id="timer">30</span>s)</span></p>
-
+    </form>
   </div>
+ </div>
   <script src="login.js"></script>
 
 </body>
