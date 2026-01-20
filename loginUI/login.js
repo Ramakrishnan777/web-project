@@ -13,7 +13,7 @@ otpinput.forEach((input,index)=>{
         }
     }
     });
-//
+
 input.addEventListener("input",()=>{
     input.value=input.value.replace(/[^0-9]/g,"")
     if(input.value&&index<otpinput.length-1){ //cursor moves to next OTP input
@@ -86,21 +86,40 @@ else{
 
 });
 //  Validate the entered email
-getotpbtn.addEventListener("click",()=>{
+getotpbtn.addEventListener("click",(event)=>{
+    event.preventDefault(); //stops default  page reload when button cliked in logincard
     if(emailregex.test(email.value)){
         emailhelper.innerHTML="We’ll send a one-time password to this email"
         emailhelper.style.color="#777";
         getotpbtn.disabled=false;
-        logindiv.classList.add("hidden"); 
-    otpdiv.classList.remove("hidden");      
+        logindiv.classList.add("is-hidden"); 
+    otpdiv.classList.remove("is-hidden");      
         startTimer(); // start OTP countdown timer after clicking get otp
 
         
     }
     else{
-        email.innerHTML="Invalid Email"
+        emailhelper.innerHTML="Invalid Email"
         emailhelper.style.color="red";
         getotpbtn.disabled=true;
     
     }
 })
+
+
+ //stops default  page reload when button cliked in otpcard
+ const loginbtn =document.getElementById("loginbtn");
+ loginbtn.addEventListener("click",(event)=>{
+    event.preventDefault();
+ })
+
+
+//combine 6 OTP INPUT Boxes into one hidden input before submitting//
+const otpform=document.getElementById("#otpform")
+const boxes=otpform.querySelectorAll(".otpinput");
+const hiddeninput=document.getElementById("#otphidden");
+otpform.addEventListener("click",()=>{
+     hiddeninput.value=Array.from(boxes).map(box=>box.value).join('');
+
+})
+ 
