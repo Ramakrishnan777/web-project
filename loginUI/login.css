@@ -12,13 +12,14 @@
 /* OUTER LAYER */
 
 .outerlayer {
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: center;
+    align-items: center;
     background-color: lightgray;
     padding: 15px;
 }
+
 
 /* LOGIN CARD */
 
@@ -88,7 +89,7 @@ button:hover {
 }
 
 /* Hidden class for toggling elements */
-.is-hidden {
+.hidden {
     display: none;
 }
 
@@ -189,7 +190,6 @@ button:hover {
         padding: 15px;
     }
 }
-
  
 
 

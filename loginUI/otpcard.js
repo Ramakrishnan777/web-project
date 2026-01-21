@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  startTimer();
+});
+
 //otp input box logic
 let otpinput=document.querySelectorAll(".otpinput")
 let allowredirect=true;//Flag to prevent focus() calls from re-triggering focus logic
@@ -22,7 +26,7 @@ input.addEventListener("input",()=>{
         otpinput[index+1].focus()
         allowredirect=true;
     }
-    
+
 });
 input.addEventListener("keydown",(event)=>{
       // If Backspace is pressed on empty input,
@@ -39,10 +43,10 @@ input.addEventListener("keydown",(event)=>{
 const resendotp = document.getElementById("resendotp");
 const timer = document.getElementById("timer");
 let seconds =30;//seconds for Resend button
-let intervalid;//it will stop seconds 
+let intervalid;//it will stop seconds
 
-function startTimer(){
-     
+ const startTimer= ()=>{
+
     resendotp.classList.add("disabled");// disable resend btn during countdown
     seconds=30;//reset seconds
     timer.textContent=seconds;
@@ -52,74 +56,17 @@ function startTimer(){
         if(seconds===0){
             clearInterval(intervalid);//stops countdown timer
             resendotp.classList.remove("disabled")//makes resend otp btn visible
-           
+
         }
     },1000);
 }
 
 resendotp.addEventListener("click",()=>{
     if(resendotp.classList.contains("disabled")) return;// ignore click if resend is disabled
-    startTimer(); 
+    startTimer();
 });
-
-//email validation
-let email=document.getElementById("email");
-let emailhelper=document.getElementById("emailhelper");
-let getotpbtn=document.getElementById("getotpbtn");
-let emailregex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-let logindiv=document.getElementById("login-card");
-let otpdiv =document.getElementById("otp-card")
-getotpbtn.disabled=true;//disable button when a valid email is entered
-email.addEventListener("input",()=>{
-if(emailregex.test(email.value)){
-    emailhelper.innerHTML="We’ll send a one-time password to this email";
-    emailhelper.style.color="#777"
-    getotpbtn.disabled=false;//enable button when a valid email is entered
-
-}
-else{
-    emailhelper.innerHTML="Invalid Email";
-    emailhelper.style.color="red";
-    getotpbtn.disabled=true;
-
-}
-
-});
-//  Validate the entered email
-getotpbtn.addEventListener("click",(event)=>{
-    event.preventDefault(); //stops default  page reload when button cliked in logincard
-    if(emailregex.test(email.value)){
-        emailhelper.innerHTML="We’ll send a one-time password to this email"
-        emailhelper.style.color="#777";
-        getotpbtn.disabled=false;
-        logindiv.classList.add("is-hidden"); 
-    otpdiv.classList.remove("is-hidden");      
-        startTimer(); // start OTP countdown timer after clicking get otp
-
-        
-    }
-    else{
-        emailhelper.innerHTML="Invalid Email"
-        emailhelper.style.color="red";
-        getotpbtn.disabled=true;
-    
-    }
-})
-
-
- //stops default  page reload when button cliked in otpcard
+ //stops default  page reload when button cliked 
  const loginbtn =document.getElementById("loginbtn");
  loginbtn.addEventListener("click",(event)=>{
     event.preventDefault();
  })
-
-
-//combine 6 OTP INPUT Boxes into one hidden input before submitting//
-const otpform=document.getElementById("#otpform")
-const boxes=otpform.querySelectorAll(".otpinput");
-const hiddeninput=document.getElementById("#otphidden");
-otpform.addEventListener("click",()=>{
-     hiddeninput.value=Array.from(boxes).map(box=>box.value).join('');
-
-})
- 
