@@ -6,7 +6,7 @@
     "date": "2026-02-07",
     "time": "10:00 AM",
     "location": "Chennai",
-    "price": "₹499",
+    "price": 499,
     "image":  "../images/foodevent.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "date": "2026-02-08",
     "time": "9:00 AM",
     "location": "Bangalore",
-    "price": "₹999",
+    "price": 999,
     "image": "../images/conferenceEvent.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "date": "2026-02-09",
     "time": "6:00 PM",
     "location": "Goa",
-    "price": "₹1,499",
+    "price": 1499,
     "image": "../images/concertevent.jpg"
   }
 ]
