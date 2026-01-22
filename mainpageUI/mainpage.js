@@ -18,21 +18,23 @@ function displayEvents(events) {
     card.className = "eventcard";
 
     // Create card content
-    card.innerHTML = `
-      <img src="${event.image}" alt="${event.title}">
+    card.innerHTML = 
+      `<img src="${event.image}" alt="${event.title}">
       <div class="eventcard-body">
         <span class="event-category">${event.category}</span>
         <h3 class="event-name">${event.title}</h3>
         <p class="event-date">📅 ${event.date} · ${event.time}</p>
         <p class="event-location">📍 ${event.location}</p>
         <div class="cardfooter">
-          <span class="event-price">${event.price}</span>
+          <span class="event-price">₹${event.price}</span>
           <button class="ticket-btn">Get Ticket</button>
         </div>
-      </div>
-    `;
+      </div>`
 
     // Add card to page
     container.appendChild(card);
   });
 }
+
+
+
