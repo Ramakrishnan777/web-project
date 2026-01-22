@@ -21,6 +21,7 @@ body {
     height: 80vh;
     display: flex;
     justify-content: center;
+    
 }
 
 /* Overlay on hero */
@@ -136,7 +137,7 @@ body {
 
 .herocontent input {
     padding: 8px;
-    width: 300px;
+    width: 500px;
 }
 
 .dropdown {
