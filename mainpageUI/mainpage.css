@@ -82,6 +82,11 @@ body {
     width: 100px;
     height: 44px;
     padding: 6px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
@@ -91,6 +96,7 @@ body {
     background: transparent;
     transition: all 0.3s ease;
 }
+
 
 .LogOut:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -137,7 +143,7 @@ body {
 
 .herocontent input {
     padding: 8px;
-    width: 500px;
+    width: 330px;
 }
 
 .dropdown {
@@ -209,66 +215,59 @@ body {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* CATEGORY HEADING SECTION */
-.categoryheading h1 {
-      position: relative;
-    top: 60px;
-   text-align: center;
-}
-
-.categoryheading p {
-    position: relative;
-    margin-top: 60px;
-    margin-left: 500px;
-}
 
 /* EVENT CATEGORY DIV*/
-.eventcategory {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 60px;
-    margin-top: 40px;
-}
+
 
 /* event category card */
-.eventTypes {
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
-    cursor: pointer;
+.categories{
+   
+    padding: 60px 20px;
+    text-align: center;
+}
+.categories h2{
+    font-size: 28px;
+    font-weight: 600px;
+    margin-bottom: 40px;
+}
+.category-container{
     display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.category-card{
+    width: 180px;
+    height: 160px;
+    border-radius: 14px;
+    cursor: pointer;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    background-color: #fff;
 }
-
-.eventTypes:hover {
+.category-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
+.category-card:hover p{
+    color: purple;
+}
+.category-card img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
 
-.eventcategoryicons {
-    font-size: 36px;
-    display: block;
-    margin-bottom: 8px;
 }
 
-h3 {
-    font-weight: 600;
-    margin-top: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    text-align: center;
-}
-
-.eventTypes:hover h3 {
-    color: #7b5cff;
+.category-card p{
+    font-size: 16px;
+    font-weight: 500px;
+    margin: 0;
 }
 
 /* event cards conatainer */
@@ -359,15 +358,18 @@ h3 {
 }
 
 .ticket-btn:hover {
-    background: #000;
+    /*background: #000;*/
+     background: linear-gradient(135deg, #ff4ecd, #7b5cff);
     color: #fff;
+    border: none;
 }
 
 .alleventsbtn {
     margin-top: 30px;
     margin-left: 600px;
     padding: 12px 28px;
-    background-color: #1a73e8;
+   /* background-color: #1a73e8;*/
+     background: linear-gradient(135deg, #ff4ecd, #7b5cff);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -475,20 +477,20 @@ footer p {
 
 
 }
-/* h1 inside categoryheading container */
+/* h2  inside categories container */
 @media (max-width:768px){
-    .categoryheading h1{
+    .categories h2{
 font-size: 26px;
     
     }
 }
-/*eventcategory and eventTypes*/
+/*category-container and category-card*/
 @media (max-width:900px){
- .eventcategory{
+ .category-container{
     flex-wrap: wrap;
     padding: 40px 20px;
  }
- .eventTypes{
+ .category-card{
     width: 140px;
     height: 140px;
  }
