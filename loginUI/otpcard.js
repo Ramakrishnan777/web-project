@@ -65,8 +65,4 @@ resendotp.addEventListener("click",()=>{
     if(resendotp.classList.contains("disabled")) return;// ignore click if resend is disabled
     startTimer();
 });
- //stops default  page reload when button cliked 
- const loginbtn =document.getElementById("loginbtn");
- loginbtn.addEventListener("click",(event)=>{
-    event.preventDefault();
- })
+

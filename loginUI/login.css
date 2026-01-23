@@ -70,7 +70,7 @@
     font-size: 15px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(90deg,#ff2f92,#7b2ff7);
+   background: linear-gradient(135deg, #ff4ecd, #7b5cff);
     transition: opacity 0.3s ease;
 }
 
@@ -141,7 +141,7 @@ button:hover {
     font-size: 15px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(90deg,#ff2f92,#7b2ff7);
+      background: linear-gradient(135deg, #ff4ecd, #7b5cff);
 }
 
 /* Resend OTP link */
